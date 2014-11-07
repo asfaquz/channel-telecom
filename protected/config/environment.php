@@ -3,7 +3,7 @@
 /**
  * This class helps to config Yii application environment.
  * @name Environment
- * @author Hisham Aburob | <haborob@souq.com>
+ * @author Syed Asfaquz Zaman | <szaman@souq.com>
  */
 class Environment {
 
