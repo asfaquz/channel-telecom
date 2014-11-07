@@ -1,0 +1,77 @@
+2014/11/05 12:08:22 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/var/www/tru.com/yii_theme/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /var/www/tru.com/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /var/www/tru.com/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/var/www/tru.co...')
+#1 /var/www/tru.com/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /var/www/tru.com/framework/web/CClientScript.php(511): CAssetManager->publish('/var/www/tru.co...')
+#3 /var/www/tru.com/framework/web/CClientScript.php(548): CClientScript->getCoreScriptUrl()
+#4 /var/www/tru.com/framework/web/CClientScript.php(349): CClientScript->getPackageBaseUrl('jquery')
+#5 /var/www/tru.com/framework/web/CClientScript.php(208): CClientScript->renderCoreScripts()
+#6 /var/www/tru.com/framework/web/CController.php(351): CClientScript->render('<!DOCTYPE html ...')
+#7 /var/www/tru.com/framework/web/CController.php(788): CController->processOutput('<!DOCTYPE html ...')
+#8 /var/www/tru.com/yii_theme/protected/controllers/SiteController.php(66): CController->render('contact', Array)
+#9 /var/www/tru.com/framework/web/actions/CInlineAction.php(49): SiteController->actionContact()
+#10 /var/www/tru.com/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/tru.com/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/tru.com/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/tru.com/framework/web/CWebApplication.php(282): CController->run('contact')
+#14 /var/www/tru.com/framework/web/CWebApplication.php(141): CWebApplication->runController('site/contact')
+#15 /var/www/tru.com/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/tru.com/yii_theme/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii_theme/index.php/site/contact
+HTTP_REFERER=http://localhost/yii_theme/index.php/site/page?view=about
+---
+2014/11/05 12:08:22 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/var/www/tru.com/yii_theme/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /var/www/tru.com/framework/web/CAssetManager.php:138
+Stack trace:
+#0 /var/www/tru.com/framework/web/CAssetManager.php(123): CAssetManager->setBasePath('/var/www/tru.co...')
+#1 /var/www/tru.com/framework/web/CAssetManager.php(217): CAssetManager->getBasePath()
+#2 /var/www/tru.com/framework/web/CClientScript.php(511): CAssetManager->publish('/var/www/tru.co...')
+#3 /var/www/tru.com/framework/web/CClientScript.php(548): CClientScript->getCoreScriptUrl()
+#4 /var/www/tru.com/framework/web/CClientScript.php(349): CClientScript->getPackageBaseUrl('jquery')
+#5 /var/www/tru.com/framework/web/CClientScript.php(208): CClientScript->renderCoreScripts()
+#6 /var/www/tru.com/framework/web/CController.php(351): CClientScript->render('<!DOCTYPE html ...')
+#7 /var/www/tru.com/framework/web/CController.php(788): CController->processOutput('<!DOCTYPE html ...')
+#8 /var/www/tru.com/yii_theme/protected/controllers/SiteController.php(92): CController->render('login', Array)
+#9 /var/www/tru.com/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#10 /var/www/tru.com/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /var/www/tru.com/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#12 /var/www/tru.com/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/tru.com/framework/web/CWebApplication.php(282): CController->run('login')
+#14 /var/www/tru.com/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#15 /var/www/tru.com/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#16 /var/www/tru.com/yii_theme/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/yii_theme/index.php/site/login
+HTTP_REFERER=http://localhost/yii_theme/index.php/site/page?view=about
+---
+2014/11/07 15:16:52 [error] [php] Undefined variable: searchParams (/var/www/tru.com/channel-telecom/protected/controllers/SiteController.php:101)
+Stack trace:
+#0 /var/www/tru.com/framework/web/CController.php(286): SiteController->runAction()
+#1 /var/www/tru.com/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#2 /var/www/tru.com/framework/web/CWebApplication.php(282): SiteController->run()
+#3 /var/www/tru.com/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/tru.com/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/tru.com/channel-telecom/index.php(8): CWebApplication->run()
+REQUEST_URI=/channel-telecom/index.php/site/test
+in /var/www/tru.com/channel-telecom/protected/controllers/SiteController.php (101)
+in /var/www/tru.com/channel-telecom/index.php (8)
+2014/11/07 23:17:46 [error] [errors] Could not resolve host: ae-en | ae-en/?service=GetContent&params=%5Bcountry%3Dae%5D%5Blanguage%3Den%5D%5Btype%3Dsearch%5D%5Bextra_params%3D%7B%22page%22%3A1%2C%22t%22%3A24%2C%22limit%22%3A12%2C%22s%22%3Anull%2C%22with_seller_units%22%3A%221%22%2C%22item_collpase%22%3A%221%22%7D%5D&result=json&output=&c_ident=-1417810148&ident=
+--------------------------
+in /var/www/channel-telecom/protected/components/api/ApiOutput.php (277)
+in /var/www/channel-telecom/protected/components/api/ApiOutput.php (34)
+in /var/www/channel-telecom/protected/components/api/Api.php (628)
+2014/11/07 23:17:46 [error] [errors] Souq service down!| Souq Api XmlToArray | 
+--------------------------
+in /var/www/channel-telecom/protected/components/api/ApiOutput.php (64)
+in /var/www/channel-telecom/protected/components/api/Api.php (628)
+in /var/www/channel-telecom/protected/controllers/SiteController.php (101)
+2014/11/07 23:21:49 [error] [errors] Could not resolve host: ae-en | ae-en/?service=GetContent&params=%5Bcountry%3Dae%5D%5Blanguage%3Den%5D%5Btype%3Dsearch%5D%5Bextra_params%3D%7B%22page%22%3A1%2C%22t%22%3A24%2C%22limit%22%3A12%2C%22s%22%3Anull%2C%22with_seller_units%22%3A%221%22%2C%22item_collpase%22%3A%221%22%7D%5D&result=json&output=&c_ident=-1417810148&ident=
+--------------------------
+in /var/www/channel-telecom/protected/components/api/ApiOutput.php (277)
+in /var/www/channel-telecom/protected/components/api/ApiOutput.php (34)
+in /var/www/channel-telecom/protected/components/api/Api.php (628)
+2014/11/07 23:21:49 [error] [errors] Souq service down!| Souq Api XmlToArray | 
+--------------------------
+in /var/www/channel-telecom/protected/components/api/ApiOutput.php (64)
+in /var/www/channel-telecom/protected/components/api/Api.php (628)
+in /var/www/channel-telecom/protected/controllers/SiteController.php (101)
