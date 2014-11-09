@@ -918,6 +918,15 @@ div.warning { margin-bottom: 20px; }
  * These follow after, and will override, the primary styles
  * The closing /mediaquery comment is required by respond.js min/max-width Media Query polyfill
  */
+.wd-200{
+    width: 150px;
+}
+.fl-l{
+    float:left;
+}
+.pd-100{
+    padding-bottom: 100px;
+}
 
 @media only screen and (max-width: 1024px) {
 

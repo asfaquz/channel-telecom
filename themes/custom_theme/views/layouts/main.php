@@ -39,20 +39,5 @@
             <article class="post">
 
         </div> <!-- #content -->
-
-        <aside id="sidebar" role="complementary">
-
-            <aside class="widget">
-                <h3>Sidebar heading</h3>
-
-                <?php
-                $this->widget('zii.widgets.CMenu', array(
-                    'items' => array(
-                        array('label' => 'Home', 'url' => array('/site/index')),
-                        array('label' => 'TEST API', 'url' => array('/site/TestApi')),
-                    ),
-                ));
-                ?>
-            </aside> <!-- .widget -->
     </div> <!-- #main -->
     <?php $this->renderPartial('//layouts/_footer', array('data' => '')); ?>
