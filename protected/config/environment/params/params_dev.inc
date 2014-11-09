@@ -16,8 +16,7 @@ return $aDefaultParams =array(
         'api_host_agent' =>'api.souq.com',
         'api_file' => 'url_api_controller4.php',
     
-      
-    
+          
         //Seller Credentials
         'IdSeller' => '163810',
         'seller' => 'toysrus+OR+babiesrus', // we have two sellers now
