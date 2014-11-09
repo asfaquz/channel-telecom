@@ -63,13 +63,15 @@ return array(
         // 'sessionCache' => $confSESSIONCACHE,
         'errorHandler' => array(
             // use 'site/error' action to display errors
-            'errorAction' => 'site/error_dev',
+            'errorAction' => 'site/error',
         ),
         'log' => array(
             'routes' => array(
                 array(
                     'class' => 'CWebLogRoute',
                     'enabled' => $this->_debug,
+                    //'showInFireBug' => true,
+                    //'ignoreAjaxInFireBug' => true,
                 ),
             )
         )

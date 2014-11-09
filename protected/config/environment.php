@@ -75,7 +75,7 @@ class Environment {
                 break;
             case self::STAGING:
                 $this->_debug = TRUE;
-                $this->_trace_level = 3;
+                $this->_trace_level = 0;
                 $this->_config = array_merge_recursive($this->_main(), $this->_stg());
                 break;
             case self::PRODUCTION:

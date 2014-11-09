@@ -52,7 +52,7 @@ return array(
                     'logFile' => 'souq_api.log',
                     'categories' => 'souq_api',
                     'MaxFileSize' => 1024 * 2,
-                    'maxLogFiles' => 1000
+                    'maxLogFiles' => 1000,
                 ),
                 array(
                     'class' => 'CFileLogRoute',
